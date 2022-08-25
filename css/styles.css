@@ -1,0 +1,260 @@
+/* Палітра кольорів 
+background: #F5F5F5;
+background-header: #FFFFFF;
+background-futer: #2F303A;
+background-hero: #2F303A;
+background-team: #F5F4FA
+background-botton: #F5F4FA;
+accent-button: #2196F3;
+white-button: #FFFFFF;
+black-word: #212121;
+logo-blue: #2196F3;
+logo-black: #000000;
+main-color-txt: #212121;
+color-text: #757575;
+text-footer: rgba(255, 255, 255, 0.6);
+
+*/
+
+:root {
+  --accent-color: #2196f3;
+  --main-color-txt: #212121;
+  --main-bg-color: #fff;
+  --logo-black: #000000;
+  --button-white-txt: #fff;
+  --color-text: #757575;
+  --button-bg-color: #f5f4fa;
+  --team-bg: #f5f4fa;
+  --hero-bg: #2f303a;
+  --footer-bg: #2f303a;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color-txt);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Ховаємо єлементи з h2 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Скасував мітки у списках */
+.list {
+  list-style: none;
+}
+
+/* Скасував підкреслювання у посиланнях */
+.link,
+.cont {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/*Перша частина логотипу */
+.logo-blue {
+  color: var(--accent-color);
+}
+
+/* Друга частина логотипу */
+.logo-black {
+  color: var(--logo-black);
+}
+
+/* Друга частина логотипу у футері */
+.logo-white {
+  color: #fff;
+}
+
+/* Задав кольор тексту посилань */
+.site-nav .link {
+  color: var(--main-color-txt);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Зміна кольору тексту (миш, таб) */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .cont:hover,
+.contacts .cont:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Головний текст */
+.hero {
+  background-color: var(--hero-bg);
+}
+
+/* Шрифт для h1 "Ефективні рішення" */
+.hero-txt {
+  color: #fff;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+/* Колір тексту скілів, професії, назви робіт */
+.skills-list,
+.prof,
+.work-list,
+.cont {
+  color: var(--color-text);
+
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Розмір шрифту для "Наші скіли" h2 */
+.skills-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Колір фону для секції "Наша команда" */
+.our-team {
+  background-color: var(--team-bg);
+}
+
+/* Розмір шрифту для тексту у секції "Наші скіли" */
+.skills-list {
+  font-weight: 400;
+  line-height: 1.71;
+  text-transform: none;
+}
+
+/* Розмір шрифту для секцій "Наші скіли" і "Наша команда", h2 */
+.subtitle,
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Розмір шрифту для імен у "Наша команда" */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Розмір шрифта для професій у "Наша команда" */
+.prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Розмір шрифту для проєктів у "Приклади робіт", h3*/
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Розмір шрифту для прикладів дизайну у "Приклад робіт"  */
+.work-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--footer-bg);
+}
+
+/* Колір тексту у футері */
+.list-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Тип шрифту у футері */
+.contacts-nav {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.addres {
+  color: var(--button-white-txt);
+}
+
+/* Зміна кольору тексту у футері (миш, таб) */
+.list-footer:hover,
+.list-footer:focus {
+  color: var(--button-white-txt);
+}
+
+/* Кнопка фільтру*/
+.bt {
+  color: #212121;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+/* Шрифт для кнопоки "Замовити послугу" */
+.but-oder {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Зміна кольору кнопок */
+.but-oder,
+.bt.primery,
+.bt.secondary:hover,
+.bt.secondary:focus {
+  color: var(--button-white-txt);
+  background-color: var(--accent-color);
+}
+
+/* Кнопка фільтру не активна */
+.bt.secondary {
+  background-color: var(--button-bg-color);
+}
