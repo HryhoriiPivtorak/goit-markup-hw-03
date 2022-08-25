@@ -13,6 +13,7 @@ logo-black: #000000;
 main-color-txt: #212121;
 color-text: #757575;
 text-footer: rgba(255, 255, 255, 0.6);
+header-border-color: #ECECEC;
 
 */
 
@@ -27,6 +28,7 @@ text-footer: rgba(255, 255, 255, 0.6);
   --team-bg: #f5f4fa;
   --hero-bg: #2f303a;
   --footer-bg: #2f303a;
+  --header-border: #ececec;
 }
 
 body {
@@ -36,6 +38,26 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
 }
 
 /* Ховаємо єлементи з h2 */
@@ -107,6 +129,10 @@ body {
   color: var(--accent-color);
 }
 
+header {
+  border-bottom: 1px solid var(--header-border);
+}
+
 /* Головний текст */
 .hero {
   background-color: var(--hero-bg);
@@ -115,6 +141,7 @@ body {
 /* Шрифт для h1 "Ефективні рішення" */
 .hero-txt {
   color: #fff;
+  margin-bottom: 30px;
 
   text-transform: uppercase;
   text-align: center;
@@ -136,12 +163,22 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Розмір шрифту для "Наші скіли" h2 */
+/* Розмір шрифту для "Наші скіли" h3 */
 .skills-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.no-padding {
+  /* padding-top: 0; */
+  padding-bottom: 0;
 }
 
 /* Колір фону для секції "Наша команда" */
@@ -159,6 +196,7 @@ body {
 /* Розмір шрифту для секцій "Наші скіли" і "Наша команда", h2 */
 .subtitle,
 .team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -235,14 +273,17 @@ body {
 
 /* Шрифт для кнопоки "Замовити послугу" */
 .but-oder {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
+
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  font-family: inherit;
 }
 
 /* Зміна кольору кнопок */
