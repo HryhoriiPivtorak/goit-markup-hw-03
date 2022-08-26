@@ -14,6 +14,7 @@ main-color-txt: #212121;
 color-text: #757575;
 text-footer: rgba(255, 255, 255, 0.6);
 header-border-color: #ECECEC;
+button-active: #188CE8;
 
 */
 
@@ -29,6 +30,8 @@ header-border-color: #ECECEC;
   --hero-bg: #2f303a;
   --footer-bg: #2f303a;
   --header-border: #ececec;
+  --works-border: #eeeeee;
+  --button-active: #188ce8;
 }
 
 body {
@@ -66,6 +69,10 @@ img {
   margin-right: auto;
   margin-left: auto;
   /* outline: 2px solid tomato; */
+}
+.container.section {
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 /* Main-nav */
@@ -292,6 +299,8 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 /* Розмір шрифту для прикладів дизайну у "Приклад робіт"  */
@@ -353,10 +362,17 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--button-white-txt);
+}
+
+.but-oder:hover,
+.but-oder:focus {
+  background-color: var(--button-active);
 }
 
 /* Зміна кольору кнопок */
-.but-oder,
 .bt.primery,
 .bt.secondary:hover,
 .bt.secondary:focus {
@@ -382,4 +398,22 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.examples {
+  padding: 20px 24px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--works-border);
+
+  /* Встановить стилі нижньої рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--works-border);
+
+  /* Встановить стилі лівої рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--works-border);
 }
