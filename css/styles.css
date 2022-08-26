@@ -65,7 +65,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Main-nav */
@@ -266,6 +266,8 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  text-align: center;
 }
 
 /* Розмір шрифта для професій у "Наша команда" */
@@ -273,6 +275,8 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+
+  text-align: center;
 }
 
 /* Розмір шрифту для проєктів у "Приклади робіт", h3*/
@@ -356,4 +360,18 @@ header {
 /* Кнопка фільтру не активна */
 .bt.secondary {
   background-color: var(--button-bg-color);
+}
+
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Сітка "Приклади робіт" */
+.example-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
