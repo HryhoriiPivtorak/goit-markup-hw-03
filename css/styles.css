@@ -50,6 +50,9 @@ ul,
 p {
   margin: 0;
 }
+ul {
+  padding-left: 0;
+}
 
 .container {
   width: 1200px;
@@ -58,6 +61,12 @@ p {
   margin-right: auto;
   margin-left: auto;
   outline: 2px solid tomato;
+}
+
+/* Maine-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Ховаємо єлементи з h2 */
@@ -108,13 +117,35 @@ p {
   color: #fff;
 }
 
-/* Задав кольор тексту посилань */
-.site-nav .link {
-  color: var(--main-color-txt);
+/* Main-nav */
+.site-nav,
+.contacts {
+  display: flex;
+}
 
+/* Отступи всім елементам крім останнього */
+.site-nav .item:not(:last-child),
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Задав кольор тексту посилань, розширив паддінги, 
+перевів зі строчного у блочний  */
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-color-txt);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.contacts .cont {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Зміна кольору тексту (миш, таб) */
@@ -129,6 +160,7 @@ p {
   color: var(--accent-color);
 }
 
+/* Сіренька смужечка під хедером */
 header {
   border-bottom: 1px solid var(--header-border);
 }
@@ -140,9 +172,9 @@ header {
 
 /* Шрифт для h1 "Ефективні рішення" */
 .hero-txt {
-  color: #fff;
   margin-bottom: 30px;
 
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
@@ -177,7 +209,6 @@ header {
   padding-bottom: 94px;
 }
 .no-padding {
-  /* padding-top: 0; */
   padding-bottom: 0;
 }
 
