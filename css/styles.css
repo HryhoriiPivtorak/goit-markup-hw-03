@@ -53,6 +53,11 @@ p {
 ul {
   padding-left: 0;
 }
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+}
 
 .container {
   width: 1200px;
@@ -63,10 +68,19 @@ ul {
   outline: 2px solid tomato;
 }
 
-/* Maine-nav */
+/* Main-nav */
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.site-nav,
+.contacts {
+  display: flex;
+}
+.nav {
+  margin-left: 93px;
+  margin-right: auto;
 }
 
 /* Ховаємо єлементи з h2 */
@@ -87,6 +101,11 @@ ul {
 /* Скасував мітки у списках */
 .list {
   list-style: none;
+}
+
+.skills-flex {
+  display: flex;
+  gap: 50px;
 }
 
 /* Скасував підкреслювання у посиланнях */
@@ -115,12 +134,6 @@ ul {
 /* Друга частина логотипу у футері */
 .logo-white {
   color: #fff;
-}
-
-/* Main-nav */
-.site-nav,
-.contacts {
-  display: flex;
 }
 
 /* Отступи всім елементам крім останнього */
@@ -195,6 +208,12 @@ header {
   letter-spacing: 0.02em;
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 /* Розмір шрифту для "Наші скіли" h3 */
 .skills-title {
   font-weight: 700;
@@ -212,6 +231,14 @@ header {
   padding-bottom: 0;
 }
 
+.block-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-work:not(:last-child) {
+  padding-right: 30px;
+}
 /* Колір фону для секції "Наша команда" */
 .our-team {
   background-color: var(--team-bg);
