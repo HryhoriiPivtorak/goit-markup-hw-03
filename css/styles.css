@@ -427,3 +427,19 @@ header {
   border-left-style: solid;
   border-left-color: var(--works-border);
 }
+
+/* TEST */
+:root {
+  --items: 3;
+  --ident: 30px;
+}
+.example-worktest {
+  --items: 3;
+  --ident: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.itemtest {
+  flex-basis: calc(100% - var(--ident) * (var(--items)-1)) / var(--items);
+}
