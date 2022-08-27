@@ -363,6 +363,12 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
 
+  width: 216px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--button-white-txt);
 }
