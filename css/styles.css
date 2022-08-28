@@ -70,10 +70,6 @@ img {
   margin-left: auto;
   /* outline: 2px solid tomato; */
 }
-.container.section {
-  padding-bottom: 200px;
-  padding-top: 200px;
-}
 
 /* Main-nav */
 .main-nav {
@@ -87,9 +83,11 @@ img {
 }
 .nav {
   margin-left: 93px;
-  margin-right: auto;
 }
 
+.contacts {
+  margin-left: auto;
+}
 /* Ховаємо єлементи з h2 */
 .visually-hidden {
   position: absolute;
@@ -112,7 +110,7 @@ img {
 
 .skills-flex {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 /* Скасував підкреслювання у посиланнях */
@@ -126,6 +124,13 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.addres {
+  margin-top: 20px;
+  font-style: normal;
+}
+.item-add + .item-add {
+  margin-top: 9px;
 }
 
 /*Перша частина логотипу */
@@ -187,12 +192,15 @@ header {
 
 /* Головний текст */
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-color: var(--hero-bg);
 }
 
 /* Шрифт для h1 "Ефективні рішення" */
 .hero-txt {
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px auto;
 
   color: #fff;
   text-transform: uppercase;
@@ -231,9 +239,10 @@ header {
   margin-bottom: 10px;
 }
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
+
 .no-padding {
   padding-bottom: 0;
 }
@@ -241,11 +250,9 @@ header {
 .block-work {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.item-work:not(:last-child) {
-  padding-right: 30px;
-}
 /* Колір фону для секції "Наша команда" */
 .our-team {
   background-color: var(--team-bg);
@@ -280,8 +287,16 @@ header {
 }
 
 .command {
-  padding: 30px;
-  background-color: var(--main-bg-color);
+  padding: 30px 0;
+}
+
+.card-design {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Розмір шрифта для професій у "Наша команда" */
@@ -312,6 +327,7 @@ header {
 
 /* Футер */
 .footer {
+  padding: 60px;
   background-color: var(--footer-bg);
 }
 
@@ -327,7 +343,7 @@ header {
   line-height: 1.71;
 }
 
-.addres {
+.addr-txt {
   color: var(--button-white-txt);
 }
 
@@ -367,11 +383,10 @@ header {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  width: 216px;
-  height: 50px;
+  min-width: 216px;
   align-items: center;
+  padding: 10px 32px;
   justify-content: center;
-  border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--button-white-txt);
@@ -401,6 +416,9 @@ header {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+
+.button-item {
 }
 
 /* Сітка "Приклади робіт" */
