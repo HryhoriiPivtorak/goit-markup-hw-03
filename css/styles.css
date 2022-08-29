@@ -327,7 +327,7 @@ header {
 
 /* Футер */
 .footer {
-  padding: 60px;
+  padding: 60px 0;
   background-color: var(--footer-bg);
 }
 
@@ -363,9 +363,11 @@ header {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  padding: 6px 22px;
   align-items: center;
   justify-content: center;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
 }
 
@@ -386,8 +388,9 @@ header {
   min-width: 216px;
   align-items: center;
   padding: 10px 32px;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: var(--button-white-txt);
 }
@@ -430,20 +433,8 @@ header {
 
 .examples {
   padding: 20px 24px;
-
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--works-border);
-
-  /* Встановить стилі нижньої рамки */
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--works-border);
-
-  /* Встановить стилі лівої рамки */
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--works-border);
+  border: 1px solid var(--works-border);
+  border-top: none;
 }
 
 /* TEST */
@@ -456,7 +447,7 @@ header {
   --ident: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--ident);
 }
 .itemtest {
   flex-basis: calc(100% - var(--ident) * (var(--items)-1)) / var(--items);
