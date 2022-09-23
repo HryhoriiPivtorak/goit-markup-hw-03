@@ -2,7 +2,7 @@
 background: #F5F5F5;
 background-header: #FFFFFF;
 background-futer: #2F303A;
-background-hero: #2F303A;
+background-hero: #C4C4C4;
 background-team: #F5F4FA
 background-botton: #F5F4FA;
 accent-button: #2196F3;
@@ -27,7 +27,7 @@ button-active: #188CE8;
   --color-text: #757575;
   --button-bg-color: #f5f4fa;
   --team-bg: #f5f4fa;
-  --hero-bg: #2f303a;
+  --hero-bg: #c4c4c4;
   --footer-bg: #2f303a;
   --header-border: #ececec;
   --works-border: #eeeeee;
@@ -194,6 +194,9 @@ header {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
+
+  background-image: url(/images/);
+  background-repeat: no-repeat;
   background-color: var(--hero-bg);
 }
 
